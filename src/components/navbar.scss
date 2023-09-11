@@ -1,0 +1,52 @@
+@import url("../index.css");
+
+.navbar {
+  position: sticky;
+  flex-direction: row;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+}
+
+.logo {
+  width: 30px;
+}
+
+.navbar_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--font-pro);
+}
+
+.link:before {
+  content: "";
+  background: var(--purple-linear);
+  display: block;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-position: 0;
+}
+
+.link:hover::before {
+  width: 100%;
+}
