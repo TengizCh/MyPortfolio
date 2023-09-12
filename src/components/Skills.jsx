@@ -40,7 +40,7 @@ const Skills = () => {
         <div className="animation_cont">
           <TypeAnimation
             sequence={[
-              "Proficient in React.js for building dynamic and interactive user interfaces, Strong understanding of JavaScript and ES6+ features, Experience with state management using Redux or Context API and Expertise in responsive web design using CSS and popular CSS frameworks like Bootstrap or Material-UI",
+              "Proficient in React.js and React Native for building dynamic and interactive user interfaces, Strong understanding of JavaScript and ES6+ features, Experience with state management using Redux or Context API and Expertise in responsive web design using CSS and popular CSS frameworks like Bootstrap, Ant-design and Material-UI",
               1000,
             ]}
             speed={50}

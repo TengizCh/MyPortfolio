@@ -47,7 +47,7 @@ const Projects = () => {
 
         <ul className="proj_list" ref={ref}>
           <li className="proj_items">
-            <p>Flight Agency Application</p>
+            <p>Flight Agency Application ✈️</p>
             <a href="https://tengizch.github.io/Flight-booking-Application/">
               <FiLink
                 className="app_link"
@@ -61,7 +61,7 @@ const Projects = () => {
             </p>
           </li>
           <li className="proj_items">
-            <p>Live Weather Application</p>
+            <p>Live Weather Application 🌦️</p>
           </li>
           <li className="proj_items">
             <p>Coming soon...</p>
