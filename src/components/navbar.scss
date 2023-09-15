@@ -50,3 +50,9 @@
 .link:hover::before {
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+}

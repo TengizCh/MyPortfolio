@@ -73,7 +73,7 @@ const Main = () => {
             />
           </motion.svg>
           <p>Hi, My name is</p>
-          <h1>Tengiz Charkviani</h1>
+          <h1 className="username">Tengiz Charkviani</h1>
           <TypeAnimation
             sequence={[
               "I'm a skilled Web Developer",
