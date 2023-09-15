@@ -59,7 +59,9 @@ const Navbar = () => {
         <Link className="link" to="/experience">
           Experience
         </Link>
-        <Link className="link">Contact</Link>
+        <Link to="/contact" className="link">
+          Contact
+        </Link>
       </div>
     </motion.div>
   );

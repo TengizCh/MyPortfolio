@@ -7,6 +7,7 @@ import Navbar from "../components/navbar";
 import { AnimatePresence } from "framer-motion";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
+import Contact from "../components/Contact";
 
 const AnimatedRoutes = () => {
   const [loading, setLoading] = useState(false);
@@ -47,6 +48,7 @@ const AnimatedRoutes = () => {
               <Route path="/skills" element={<Skills />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/experience" element={<Experience />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </AnimatePresence>
         </>

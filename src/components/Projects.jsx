@@ -49,10 +49,7 @@ const Projects = () => {
           <li className="proj_items">
             <p>Flight Agency Application ✈️</p>
             <a href="https://tengizch.github.io/Flight-booking-Application/">
-              <FiLink
-                className="app_link"
-                href="https://tengizch.github.io/Flight-booking-Application/"
-              />
+              <FiLink className="app_link" />
             </a>
             <p className="bottom_text">
               The application is constructed using React.js, featuring a
@@ -62,6 +59,14 @@ const Projects = () => {
           </li>
           <li className="proj_items">
             <p>Live Weather Application 🌦️</p>
+            <a href="https://tengizch.github.io/weather-app/">
+              <FiLink className="app_link" />
+            </a>
+            <p className="bottom_text">
+              The application is constructed using React.js, featuring a
+              responsive design and enhanced with dynamic animations powered by
+              AOS.
+            </p>
           </li>
           <li className="proj_items">
             <p>Coming soon...</p>

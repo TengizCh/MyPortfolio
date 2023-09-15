@@ -36,6 +36,10 @@ const Main = () => {
     },
   };
 
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <motion.div
       className="main flex"
@@ -90,11 +94,13 @@ const Main = () => {
             <a href="https://www.linkedin.com/in/tengiz-charkviani-89893122b/">
               <AiFillLinkedin className="icon" />
             </a>
-            <a href="">
+            <a href="https://www.gmail.com">
               <BiLogoGmail className="icon" />
             </a>
           </div>
-          <button className="btn">Let's Talk</button>
+          <button onClick={navigateToContact} className="btn">
+            Let's Talk
+          </button>
         </div>
       </div>
     </motion.div>
