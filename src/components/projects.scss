@@ -112,3 +112,38 @@ a {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  #progress {
+    top: 1%;
+    left: 50%;
+    height: 70px;
+  }
+
+  .proj_list {
+    height: 600px;
+  }
+
+  .proj_items {
+    flex: 0 0 350px;
+    background: url(../assets/BG1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 15px 0 0;
+  }
+
+  p {
+    font-size: 20px;
+    padding: 20px 0px 10px 20px !important;
+  }
+
+  .app_link {
+    height: 40px;
+    width: 40px;
+    color: white;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}

@@ -51,8 +51,17 @@
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
-  .navbar {
-    padding: 1rem 0.5rem;
+@media screen and (max-width: 767px) {
+  .navBarMenu {
+    position: absolute;
+    right: -50%;
+    width: 80%;
+    background-color: red;
   }
 }
+
+// @media screen and (max-width: 480px) {
+//   .navbar {
+//     padding: 1rem 0.5rem;
+//   }
+// }

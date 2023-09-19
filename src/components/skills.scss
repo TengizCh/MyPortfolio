@@ -42,3 +42,32 @@ h2 {
   width: 50px !important;
   height: 50px !important;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 1rem 1.6rem !important;
+    z-index: 10;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .animation_cont {
+    max-width: 100% !important;
+  }
+
+  .text_animation {
+    font-size: 18px !important;
+    width: 80%;
+    letter-spacing: 1px !important;
+  }
+
+  .single_inner {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+}

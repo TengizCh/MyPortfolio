@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,12 @@ import { motion, useTime, useTransform } from "framer-motion";
 // logos
 
 const Navbar = () => {
+  const [active, setActive] = useState("navbar_two");
+
+  const showNavBar = () => {
+    setActive("navbar_two showNavBar");
+  };
+
   const time = useTime();
   const rotate = useTransform(time, [0, 3000], [0, 360], { clamp: false });
 
@@ -46,7 +52,7 @@ const Navbar = () => {
           />
         </motion.svg>
       </div>
-      <div className="navbar_two">
+      <div className={active}>
         <Link className="link" to="/">
           Home
         </Link>
