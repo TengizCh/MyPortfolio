@@ -5,14 +5,18 @@ import { Link } from "react-router-dom";
 // animation
 
 import { motion, useTime, useTransform } from "framer-motion";
+import { AlignCenterOutlined } from "@ant-design/icons";
 
 // logos
 
 const Navbar = () => {
-  const [active, setActive] = useState("navbar_two");
+  const [active, setActive] = useState(false);
 
   const showNavBar = () => {
-    setActive("navbar_two showNavBar");
+    setActive(!active);
+  };
+  const removeNavBar = () => {
+    setActive(!active);
   };
 
   const time = useTime();
@@ -52,7 +56,28 @@ const Navbar = () => {
           />
         </motion.svg>
       </div>
-      <div className={active}>
+      <button>
+        <AlignCenterOutlined onClick={showNavBar} className="menu_icon" />
+      </button>
+      <div className={active ? "navbar_two showNavBar" : "navbar_two"}>
+        <Link onClick={removeNavBar} className="link" to="/">
+          Home
+        </Link>
+        <Link onClick={removeNavBar} className="link" to="/skills">
+          Skills
+        </Link>
+        <Link onClick={removeNavBar} className="link" to="/projects">
+          Projects
+        </Link>
+        <Link onClick={removeNavBar} className="link" to="/experience">
+          Experience
+        </Link>
+        <Link onClick={removeNavBar} to="/contact" className="link">
+          Contact
+        </Link>
+      </div>
+
+      {/* <div className={active}>
         <Link className="link" to="/">
           Home
         </Link>
@@ -68,7 +93,7 @@ const Navbar = () => {
         <Link to="/contact" className="link">
           Contact
         </Link>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

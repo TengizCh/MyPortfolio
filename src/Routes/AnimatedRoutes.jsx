@@ -16,7 +16,7 @@ const AnimatedRoutes = () => {
   const location = useLocation();
 
   useEffect(() => {
-    setTimeout(() => setLoading(true), 2000);
+    setTimeout(() => setLoading(true), 200000);
     setLoading(false);
   }, []);
 
