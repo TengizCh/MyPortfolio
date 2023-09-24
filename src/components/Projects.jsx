@@ -47,6 +47,18 @@ const Projects = () => {
 
         <ul className="proj_list" ref={ref}>
           <li className="proj_items">
+            <p>Biomo 🫐</p>
+            <a href="https://tengizch.github.io/weather-app/">
+              <FiLink className="app_link" />
+            </a>
+            <p className="bottom_text">
+              The application is build with React.js, featuring a responsive
+              design using SCSS and enhanced with dynamic animations powered by
+              Framer. Also leveraged React Router DOM to enhance better
+              navigation experience.
+            </p>
+          </li>
+          <li className="proj_items">
             <p>Flight Agency Application ✈️</p>
             <a href="https://tengizch.github.io/Flight-booking-Application/">
               <FiLink className="app_link" />
@@ -68,9 +80,7 @@ const Projects = () => {
               AOS.
             </p>
           </li>
-          <li className="proj_items">
-            <p>Coming soon...</p>
-          </li>
+
           <li className="proj_items">
             <p>Coming soon...</p>
           </li>
