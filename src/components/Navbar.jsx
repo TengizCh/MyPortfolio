@@ -56,7 +56,7 @@ const Navbar = () => {
           />
         </motion.svg>
       </div>
-      <button>
+      <button className="menu_icon_button">
         <AlignCenterOutlined onClick={showNavBar} className="menu_icon" />
       </button>
       <div className={active ? "navbar_two showNavBar" : "navbar_two"}>

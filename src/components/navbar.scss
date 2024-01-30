@@ -55,6 +55,10 @@
   display: none;
 }
 
+.menu_icon_button {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .navbar {
     padding: 20px;
@@ -64,6 +68,11 @@
     display: block;
     color: var(--purple);
     font-size: 30px;
+  }
+
+  .menu_icon_button {
+    color: transparent;
+    display: block;
   }
 
   button {
